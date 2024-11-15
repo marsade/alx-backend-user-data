@@ -2,9 +2,10 @@
 '''Logging messages'''
 
 import re
+from typing import List
 
 
-def filter_datum(fields:list[str], redaction:str, message, seperator:str):
+def filter_datum(fields: List[str], redaction:str, message:str, seperator:str) -> str:
     '''Obfuscates message received
     
     Args: 
